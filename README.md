@@ -31,6 +31,7 @@ Backend repo for DIY dynamic displays
   - random facts
   - stocks
   - NOTE: save these async channels in DB so app can reschedule them on startup
+- supports multiple types of displays
 
 ## Nerd stuff
 - git branch convention: `<initials>/<branch name>`
