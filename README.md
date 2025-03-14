@@ -10,11 +10,17 @@ Backend repo for DIY dynamic displays
 - [Vestaboard dev docs](https://docs.vestaboard.com/docs/local-api/introduction/?_gl=1*tzsb1s*_gcl_au*MjA0NDc4OTkwLjE3NDAyNDYwNjM.*_ga*NTkzMjIyNTI1LjE3NDAyNDYwNjM.*_ga_JE1QENZVTH*MTc0MTE0NDAyNi4xMC4xLjE3NDExNDQ0OTUuMjcuMC43MDQ5NjM5MjQ.&_ga=2.32622909.284988025.1741060193-593222525.1740246063)
 
 ### Tech stack
-- Django (for backend server)
-  - Celery Beat (for async job scheduling)
-- SQLite (for simple DB)
-- Celery (for async workers)
-- Redis (for async job broker)
+- OPTION A:
+  - NextJS (for backend server)
+    - [Task scheduling](https://docs.nestjs.com/techniques/task-scheduling)
+    - [Dynamic API](https://docs.nestjs.com/techniques/task-scheduling#dynamic-timeouts)
+  - [DB TBD](https://nextjstemplates.com/blog/best-database-for-nextjs)
+- OPTION B:
+  - Django (for backend server)
+    - Celery Beat (for async job scheduling)
+  - SQLite (for simple DB)
+  - Celery (for async workers)
+  - Redis (for async job broker)
 - Vestaboard Frontend repo: [vestaboard-plus-plus](https://github.com/NahItsFine/vestaboard-plus-plus)
 
 ### Features
